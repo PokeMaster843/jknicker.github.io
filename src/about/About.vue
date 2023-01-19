@@ -1,3 +1,10 @@
+<!--
+	import page stylesheet
+-->
+<script setup>
+	import "./about.css"
+</script>
+
 <template>
 	<!--
 		parent element hidden by default so that on page load, user will not see elements without styling for a brief moment
@@ -14,7 +21,7 @@
 			page body container
 		-->
 		<div class="pageBody">
-			<img id="profile" src="/job_profile.jpg">
+			<img id="profile" src="../assets/job_profile.jpg">
 			<p id="aboutText">Hello, my name is John Knickerbocker! I am currently a Third Year at the University of Virginia
 			majoring in Computer Science and minoring in Japanese. Originating from my desire to make mods for <i>Minecraft</i>
 			when I was in middle school, I have been programming in various languages for the better part of a decade now.
@@ -24,8 +31,4 @@
 			you like!</p>
 		</div>
 	</div>
-	<!--
-		page stylesheet
-	-->
-	<!--link rel="stylesheet" type="text/css" href="src/about/about.css"-->
 </template>

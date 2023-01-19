@@ -273,27 +273,26 @@ function _hoverOut() {
 
 }
 
+// export object
+const Demos = {
+
+	_selectTab,
+	
+	_changeScales,
+	
+	_newDP,
+	_newChomp,
+	
+	_trackMouse,
+	_exitCanvas,
+	
+	_clickFn,
+
+	_toggleCheck,
+	_hoverIn,
+	_hoverOut
+
+};
+
 // export methods for use in Demos.vue
-export default {
-
-	methods: {
-
-		_selectTab,
-		
-		_changeScales,
-		
-		_newDP,
-		_newChomp,
-		
-		_trackMouse,
-		_exitCanvas,
-		
-		_clickFn,
-
-		_toggleCheck,
-		_hoverIn,
-		_hoverOut,
-
-	}
-
-}
+export default Demos;

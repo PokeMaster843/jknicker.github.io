@@ -4,8 +4,9 @@ function _toggleVisible(id) {
 	e.style.display = e.style.display !== "block" ? "block" : "none";
 }
 
-export default {
-	methods: {
-		_toggleVisible,
-	}
+// export object
+const Experience = {
+	_toggleVisible
 };
+// export functions
+export default Experience;

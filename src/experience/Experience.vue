@@ -1,3 +1,11 @@
+<!--
+	import page stylesheet
+-->
+<script setup>
+	import "./experience.css"
+	import Experience from "./experience"
+</script>
+
 <template>
 	<!--
 		parent element hidden by default so that on page load, user will not see elements without styling for a brief moment
@@ -16,7 +24,7 @@
 		<div class="pageBody">
 			<p id="introText">Throughout the years, I have used a variety of different languages. However, I do not claim equal mastery over all of them. To see the details of my proficiency, click on a particular language. To hide details, click again.</p>
 			<ul id="langs">
-				<li @click="_toggleVisible('asm')">
+				<li @click="Experience._toggleVisible('asm')">
 					<a>Assembly</a>
 					<ul id="asm" class="langDetails">
 						<li><a>Used for class</a></li>
@@ -24,7 +32,7 @@
 					</ul>
 				</li>
 
-				<li @click="_toggleVisible('cpp')">
+				<li @click="Experience._toggleVisible('cpp')">
 					<a>C++</a>
 					<ul id="cpp" class="langDetails">
 						<li><a>Used for classes very frequently</a></li>
@@ -32,7 +40,7 @@
 					</ul>
 				</li>
 				
-				<li @click="_toggleVisible('git')">
+				<li @click="Experience._toggleVisible('git')">
 					<a>Git</a>
 					<ul id="git" class="langDetails">
 						<li><a>Little experience (less than a year)</a></li>
@@ -49,7 +57,7 @@
 					</ul>
 				</li>
 				
-				<li @click="_toggleVisible('java')">
+				<li @click="Experience._toggleVisible('java')">
 					<a>Java</a>
 					<ul id="java" class="langDetails">
 						<li><a>First language learned - fairly well-accustomed to it</a></li>
@@ -58,7 +66,7 @@
 					</ul>
 				</li>
 				
-				<li @click="_toggleVisible('js')">
+				<li @click="Experience._toggleVisible('js')">
 					<a>JavaScript</a>
 					<ul id="js" class="langDetails">
 						<li><a>Well-accustomed to language</a></li>
@@ -68,14 +76,14 @@
 					</ul>
 				</li>
 				
-				<li @click="_toggleVisible('py')">
+				<li @click="Experience._toggleVisible('py')">
 					<a>Python</a>
 					<ul id="py" class="langDetails">
 						<li><a>Little experience (less than a year)</a></li>
 					</ul>
 				</li>
 
-				<li @click="_toggleVisible('rb')">
+				<li @click="Experience._toggleVisible('rb')">
 					<a>Ruby on Rails/Ruby</a>
 					<ul id="rb" class="langDetails">
 						<li><a>Little experience (less than a year)</a></li>
@@ -83,7 +91,7 @@
 					</ul>
 				</li>
 
-				<li @click="_toggleVisible('scss')">
+				<li @click="Experience._toggleVisible('scss')">
 					<a>SCSS/CSS</a>
 					<ul id="scss" class="langDetails">
 						<li><a>Some experience (1-2 years)</a></li>
@@ -92,14 +100,14 @@
 					</ul>
 				</li>
 
-				<li @click="_toggleVisible('sql')">
+				<li @click="Experience._toggleVisible('sql')">
 					<a>SQL</a>
 					<ul id="sql" class="langDetails">
 						<li><a>Little experience (less than a year)</a></li>
 					</ul>
 				</li>
 
-				<li @click="_toggleVisible('vite')">
+				<li @click="Experience._toggleVisible('vite')">
 					<a>Vite/Vue</a>
 					<ul id="vite" class="langDetails">
 						<li><a>Little experience (less than a year)</a></li>
@@ -109,12 +117,4 @@
 			</ul>
 		</div>
 	</div>
-	<!--
-		page stylesheet
-	-->
-	<!--link rel="stylesheet" type="text/css" href="src/experience/experience.css"-->
 </template>
-<!--
-	page javascript
--->
-<script type="module" src="/src/experience/experience.js"></script>

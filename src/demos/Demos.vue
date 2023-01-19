@@ -1,3 +1,11 @@
+<!--
+	import page stylesheet
+-->
+<script setup>
+	import "./demos.css"
+	import Demos from "./demos"
+</script>
+
 <template>
 	<!--
 		parent element hidden by default so that on page load, user will not see elements without styling for a brief moment
@@ -20,9 +28,9 @@
 			-->
 			<div id="tabContainer">
 				<ul>
-					<li class="demo" id="dp" @click="_selectTab('dp')"><a>Double Pendulum</a></li>
-					<li class="demo" id="chomp" @click="_selectTab('chomp')"><a>Chomp</a></li>
-					<li class="demo" id="third" @click="_selectTab('third')"><a>3rd Demo</a></li>
+					<li class="demo" id="dp" @click="Demos._selectTab('dp')"><a>Double Pendulum</a></li>
+					<li class="demo" id="chomp" @click="Demos._selectTab('chomp')"><a>Chomp</a></li>
+					<li class="demo" id="third" @click="Demos._selectTab('third')"><a>3rd Demo</a></li>
 				</ul>
 			</div>
 
@@ -48,7 +56,7 @@
 						<input class="numVal" type="number" id="timeScale" value="60">
 						<label class="unitLabel" for="drawScale">frames/sec</label>
 
-						<input type="button" id="applyChanges" value="Apply" @click="_changeScales()">
+						<input type="button" id="applyChanges" value="Apply" @click="Demos._changeScales()">
 
 					</div>
 
@@ -87,7 +95,7 @@
 
 						</div>
 
-						<input class="newDemo" type="button" id="newDP" value="Run New Simulation" @click="_newDP()">
+						<input class="newDemo" type="button" id="newDP" value="Run New Simulation" @click="Demos._newDP()">
 
 					</div>
 
@@ -121,11 +129,11 @@
 							</select>
 							
 							<label>A.I. goes first?</label>
-							<div id="aiFirst" @click="_toggleCheck()" @mouseenter="_hoverIn()" @mouseleave="_hoverOut()"></div>
+							<div id="aiFirst" @click="Demos._toggleCheck()" @mouseenter="Demos._hoverIn()" @mouseleave="Demos._hoverOut()"></div>
 
 						</div>
 
-						<input class="newDemo" type="button" id="newChomp" value="New Chomp Game" @click="_newChomp()">
+						<input class="newDemo" type="button" id="newChomp" value="New Chomp Game" @click="Demos._newChomp()">
 
 					</div>
 					
@@ -140,7 +148,7 @@
 						page canvas element
 					-->
 					<p style="display: none;" id="turnText"></p>
-					<canvas id="cnv" width="100" height="100" @mousemove="_trackMouse" @mouseleave="_exitCanvas()" @click="_clickFn()"></canvas>
+					<canvas id="cnv" width="100" height="100" @mousemove="Demos._trackMouse" @mouseleave="Demos._exitCanvas()" @click="Demos._clickFn()"></canvas>
 
 				</div>
 
@@ -148,12 +156,4 @@
 
 		</div>
 	</div>
-	<!--
-		page stylesheet
-	-->
-	<!--link rel="stylesheet" type="text/css" href="src/demos/demos.css"-->
 </template>
-<!--
-	page javascript
--->
-<script type="module" src="/src/demos/demos.js"></script>

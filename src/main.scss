@@ -39,14 +39,14 @@ body {
 				right: 1vmin;
 				z-index: 1;
 
-				object {
+				img {
 					width: 7vmin;
 					height: 7vmin;
 					position: absolute;
 					right: 0;
 				}
 
-				object:hover {
+				img:hover {
 					animation-name: rotate;
 					animation-duration: 300ms;
 				}

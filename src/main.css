@@ -29,13 +29,13 @@ body #app #navMenu #menuIcon {
   right: 1vmin;
   z-index: 1;
 }
-body #app #navMenu #menuIcon object {
+body #app #navMenu #menuIcon img {
   width: 7vmin;
   height: 7vmin;
   position: absolute;
   right: 0;
 }
-body #app #navMenu #menuIcon object:hover {
+body #app #navMenu #menuIcon img:hover {
   animation-name: rotate;
   animation-duration: 300ms;
 }
