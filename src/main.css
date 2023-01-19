@@ -1,7 +1,7 @@
 body {
   background-color: #2C3254;
 }
-body .content {
+body #app {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -10,14 +10,14 @@ body .content {
   padding: 0;
   margin: 0;
 }
-body .content #navMenu {
+body #app #navMenu {
   list-style-type: none;
   margin: 0;
   padding: 2px;
   position: absolute;
   right: 0px;
 }
-body .content #navMenu #menuIcon {
+body #app #navMenu #menuIcon {
   display: block;
   visibility: visible;
   width: 7vmin;
@@ -29,22 +29,22 @@ body .content #navMenu #menuIcon {
   right: 1vmin;
   z-index: 1;
 }
-body .content #navMenu #menuIcon object {
+body #app #navMenu #menuIcon object {
   width: 7vmin;
   height: 7vmin;
   position: absolute;
   right: 0;
 }
-body .content #navMenu #menuIcon object:hover {
+body #app #navMenu #menuIcon object:hover {
   animation-name: rotate;
   animation-duration: 300ms;
 }
-body .content #navMenu #menuIcon:hover ~ #pages {
+body #app #navMenu #menuIcon:hover ~ #pages {
   transition-delay: 100ms;
   transition-property: visibility;
   visibility: visible;
 }
-body .content #navMenu #pages {
+body #app #navMenu #pages {
   visibility: hidden;
   width: 160pt;
   position: fixed;
@@ -53,7 +53,7 @@ body .content #navMenu #pages {
   font-size: 20pt;
   z-index: 1;
 }
-body .content #navMenu #pages li {
+body #app #navMenu #pages li {
   color: white;
   text-align: center;
   background-color: rgba(33, 39, 69, 0.5);
@@ -62,18 +62,18 @@ body .content #navMenu #pages li {
   padding: 10px;
   margin: 0;
 }
-body .content #navMenu #pages li a:link, body .content #navMenu #pages li a:visited {
+body #app #navMenu #pages li a:link, body #app #navMenu #pages li a:visited {
   color: white;
   text-decoration: none;
 }
-body .content #navMenu #pages li a:link:active, body .content #navMenu #pages li a:visited:active {
+body #app #navMenu #pages li a:link:active, body #app #navMenu #pages li a:visited:active {
   color: white;
   text-decoration: none;
 }
-body .content #navMenu #pages li:hover {
+body #app #navMenu #pages li:hover {
   background-color: rgba(33, 39, 69, 0.8);
 }
-body .content #navMenu #pages:hover {
+body #app #navMenu #pages:hover {
   visibility: visible;
 }
 
