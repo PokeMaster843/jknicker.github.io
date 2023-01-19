@@ -1,0 +1,20 @@
+@use "../subpage";
+
+#profile {
+	width: 30vw;
+	max-height: auto;
+	position: absolute;
+	right: 2vmin;
+	top: 2vmin;
+	box-shadow: 0vmin 0vmin 2vmin rgba(0, 0, 0, 0.33);
+}
+
+#aboutText {
+	width: 65vw;
+	position: absolute;
+	top: 2vmin;
+	left: 2vmin;
+	text-align: justify;
+	text-indent: 10vmin;
+	line-height: 150%;
+}

@@ -1,0 +1,114 @@
+@use "sass:math";
+
+$baseColor: #2C3254;
+
+@mixin theme($theme: #212745) {
+	color: white;
+	text-align: center;
+	background-color: rgba($theme, 0.5);
+}
+
+body {
+	background-color: $baseColor;
+
+	.content {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 0;
+		margin: 0;
+
+		#navMenu {
+			list-style-type: none;
+			margin: 0;
+			padding: 2px;
+			position: absolute;
+			right: 0px;
+
+			#menuIcon {
+				display: block;
+				visibility: visible;
+				width: 7vmin;
+				height: 7vmin;
+				padding: 0;
+				margin: 0;
+				position: fixed;
+				top: 1vmin;
+				right: 1vmin;
+				z-index: 1;
+
+				object {
+					width: 7vmin;
+					height: 7vmin;
+					position: absolute;
+					right: 0;
+				}
+
+				object:hover {
+					animation-name: rotate;
+					animation-duration: 300ms;
+				}
+
+			} // #menuIcon
+
+			#menuIcon:hover ~ #pages {
+				transition-delay: 100ms;
+				transition-property: visibility;
+				visibility: visible;
+			}
+
+			#pages {
+				visibility: hidden;
+				width: 20pt * 8;
+				position: fixed;
+				top: 8vmin;
+				right: 1vmin;
+				font-size: 20pt;
+				z-index: 1;
+
+				li {
+					@include theme;
+					display: block;
+					overflow: hidden;
+					padding: 10px;
+					margin: 0;
+
+					a:link, a:visited {
+						color: white;
+						text-decoration: none;
+					}
+
+					a:link:active, a:visited:active {
+						color: white;
+						text-decoration: none;
+					}
+
+				} // li
+
+				li:hover {
+					background-color: rgb(#212745, 0.8);
+				}
+
+			} // #pages
+
+			#pages:hover {
+				visibility: visible;
+			}
+
+		} // #navMenu
+
+	} // .content
+
+} // body
+
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}

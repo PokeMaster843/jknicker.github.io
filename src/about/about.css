@@ -1,0 +1,47 @@
+#parent {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#parent .pageTitle {
+  visibility: visible;
+  color: #C3C3D5;
+  width: 100%;
+  height: 8%;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2vmin;
+}
+#parent .pageBody {
+  color: #C3C3D5;
+  text-align: center;
+  background-color: rgba(79, 90, 150, 0.33);
+  visibility: visible;
+  width: 99%;
+  height: 91%;
+  position: absolute;
+  top: 8%;
+  left: 0.5%;
+  font-size: 20pt;
+}
+
+#profile {
+  width: 30vw;
+  max-height: auto;
+  position: absolute;
+  right: 2vmin;
+  top: 2vmin;
+  box-shadow: 0vmin 0vmin 2vmin rgba(0, 0, 0, 0.33);
+}
+
+#aboutText {
+  width: 65vw;
+  position: absolute;
+  top: 2vmin;
+  left: 2vmin;
+  text-align: justify;
+  text-indent: 10vmin;
+  line-height: 150%;
+}
+
+/*# sourceMappingURL=about.css.map */

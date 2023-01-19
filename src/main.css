@@ -1,0 +1,89 @@
+body {
+  background-color: #2C3254;
+}
+body .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+body .content #navMenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 2px;
+  position: absolute;
+  right: 0px;
+}
+body .content #navMenu #menuIcon {
+  display: block;
+  visibility: visible;
+  width: 7vmin;
+  height: 7vmin;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 1vmin;
+  right: 1vmin;
+  z-index: 1;
+}
+body .content #navMenu #menuIcon object {
+  width: 7vmin;
+  height: 7vmin;
+  position: absolute;
+  right: 0;
+}
+body .content #navMenu #menuIcon object:hover {
+  animation-name: rotate;
+  animation-duration: 300ms;
+}
+body .content #navMenu #menuIcon:hover ~ #pages {
+  transition-delay: 100ms;
+  transition-property: visibility;
+  visibility: visible;
+}
+body .content #navMenu #pages {
+  visibility: hidden;
+  width: 160pt;
+  position: fixed;
+  top: 8vmin;
+  right: 1vmin;
+  font-size: 20pt;
+  z-index: 1;
+}
+body .content #navMenu #pages li {
+  color: white;
+  text-align: center;
+  background-color: rgba(33, 39, 69, 0.5);
+  display: block;
+  overflow: hidden;
+  padding: 10px;
+  margin: 0;
+}
+body .content #navMenu #pages li a:link, body .content #navMenu #pages li a:visited {
+  color: white;
+  text-decoration: none;
+}
+body .content #navMenu #pages li a:link:active, body .content #navMenu #pages li a:visited:active {
+  color: white;
+  text-decoration: none;
+}
+body .content #navMenu #pages li:hover {
+  background-color: rgba(33, 39, 69, 0.8);
+}
+body .content #navMenu #pages:hover {
+  visibility: visible;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

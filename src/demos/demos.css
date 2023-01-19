@@ -1,0 +1,150 @@
+#parent {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#parent .pageTitle {
+  visibility: visible;
+  color: #C3C3D5;
+  width: 100%;
+  height: 8%;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2vmin;
+}
+#parent .pageBody {
+  color: #C3C3D5;
+  text-align: center;
+  background-color: rgba(79, 90, 150, 0.33);
+  visibility: visible;
+  width: 99%;
+  height: 91%;
+  position: absolute;
+  top: 8%;
+  left: 0.5%;
+  font-size: 20pt;
+}
+
+#contentContainer .demoContainer .demoDiv .inputDiv .idLabel, #contentContainer .demoContainer #misc .idLabel {
+  font-weight: bold;
+}
+#contentContainer .demoContainer .demoDiv .inputDiv .unitLabel, #contentContainer .demoContainer #misc .unitLabel {
+  padding-right: 2vmin;
+}
+#contentContainer .demoContainer .demoDiv .inputDiv .numVal, #contentContainer .demoContainer #misc .numVal {
+  color: #C3C3D5;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: solid;
+  width: 80pt;
+  padding: 0;
+  margin: 1vmin;
+  font-size: 18pt;
+  text-align: center;
+}
+#contentContainer .demoContainer .demoDiv .inputDiv .listVal, #contentContainer .demoContainer #misc .listVal {
+  color: #C3C3D5;
+  background-color: #212745;
+  margin-left: 2vmin;
+  margin-right: 2vmin;
+  font-size: 18pt;
+}
+#contentContainer .demoContainer .demoDiv .inputDiv #aiFirst, #contentContainer .demoContainer #misc #aiFirst {
+  display: inline-block;
+  background-color: #4d5b99;
+  border-color: #c3c3d5;
+  border: solid;
+  width: 18pt;
+  height: 18pt;
+  padding: 0;
+  margin-left: 1vmin;
+}
+
+#contentContainer .demoContainer .demoDiv .newDemo, #contentContainer .demoContainer #misc #applyChanges {
+  color: #C3C3D5;
+  background-color: #212745;
+  border-color: #212745;
+  margin: 1vmin;
+  font-size: 18pt;
+}
+
+#tabContainer {
+  display: block;
+  width: 100%;
+  height: 8%;
+  position: absolute;
+}
+#tabContainer ul {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  bottom: 0;
+  left: 1vmin;
+  padding: 0;
+  margin: 0;
+}
+#tabContainer ul li {
+  display: inline-block;
+  border-color: rgba(195, 195, 213, 0.5);
+  border: solid;
+  border-bottom: none;
+  width: 200pt;
+  padding: 0;
+  margin: 0;
+  margin-right: 1px;
+}
+#tabContainer ul li a {
+  width: 200pt;
+  padding: 0;
+  margin: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#contentContainer {
+  display: block;
+  background-color: rgb(26, 0, 51);
+  width: 100%;
+  height: 92%;
+  margin: 0;
+  position: absolute;
+  top: 8%;
+}
+#contentContainer .demoContainer {
+  background-color: inherit;
+  width: inherit;
+  height: 70vh;
+  position: relative;
+}
+#contentContainer .demoContainer #misc {
+  display: block;
+  width: fit-content;
+  position: absolute;
+  top: 1vmin;
+  left: 1vmin;
+}
+#contentContainer .demoContainer .demoDiv {
+  display: none;
+  width: fit-content;
+  position: absolute;
+  top: 40pt;
+  left: 1vmin;
+}
+#contentContainer .demoContainer #turnText {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 3vmin;
+}
+#contentContainer .demoContainer #cnv {
+  display: none;
+  border-color: rgb(0, 0, 0);
+  border: solid;
+  position: absolute;
+  top: 1vmin;
+  right: 3vmin;
+}
+
+/*# sourceMappingURL=demos.css.map */
