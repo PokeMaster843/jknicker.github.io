@@ -7,7 +7,7 @@
     <!--
       menu icon
     -->
-    <li id="menuIcon"><object data="./src/assets/menu.svg"></object></li>
+    <li id="menuIcon"><object data="/menu.svg"></object></li>
 
     <!--
       page links

@@ -9,7 +9,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-        fileURLToPath(new URL('src/assets/job_profile.jpg', import.meta.url))
+        fileURLToPath(new URL('./src/assets/job_profile.jpg', import.meta.url))
       ]
     },
   },

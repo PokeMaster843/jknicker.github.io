@@ -17,5 +17,5 @@
 	<!--
 		page stylesheet
 	-->
-	<link rel="stylesheet" type="text/css" href="src/home/home.css">
+	<!--link rel="stylesheet" type="text/css" href="./src/home/home.css"-->
 </template>

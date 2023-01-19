@@ -151,7 +151,7 @@
 	<!--
 		page stylesheet
 	-->
-	<link rel="stylesheet" type="text/css" href="src/demos/demos.css">
+	<!--link rel="stylesheet" type="text/css" href="src/demos/demos.css"-->
 </template>
 <!--
 	page javascript

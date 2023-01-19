@@ -14,7 +14,7 @@
 			page body container
 		-->
 		<div class="pageBody">
-			<img id="profile" src="../assets/job_profile.jpg">
+			<img id="profile" src="/job_profile.jpg">
 			<p id="aboutText">Hello, my name is John Knickerbocker! I am currently a Third Year at the University of Virginia
 			majoring in Computer Science and minoring in Japanese. Originating from my desire to make mods for <i>Minecraft</i>
 			when I was in middle school, I have been programming in various languages for the better part of a decade now.
@@ -27,5 +27,5 @@
 	<!--
 		page stylesheet
 	-->
-	<link rel="stylesheet" type="text/css" href="src/about/about.css">
+	<!--link rel="stylesheet" type="text/css" href="src/about/about.css"-->
 </template>

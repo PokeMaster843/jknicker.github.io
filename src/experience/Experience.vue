@@ -112,7 +112,7 @@
 	<!--
 		page stylesheet
 	-->
-	<link rel="stylesheet" type="text/css" href="src/experience/experience.css">
+	<!--link rel="stylesheet" type="text/css" href="src/experience/experience.css"-->
 </template>
 <!--
 	page javascript

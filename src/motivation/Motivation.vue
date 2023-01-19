@@ -17,5 +17,5 @@
 	<!--
 		page stylesheet
 	-->
-	<link rel="stylesheet" type="text/css" href="src/motivation/motivation.css">
+	<!--link rel="stylesheet" type="text/css" href="src/motivation/motivation.css"-->
 </template>
