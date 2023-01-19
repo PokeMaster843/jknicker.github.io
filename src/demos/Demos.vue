@@ -10,7 +10,7 @@
 	<!--
 		parent element hidden by default so that on page load, user will not see elements without styling for a brief moment
 	-->
-	<div id="parent" style="visibility:hidden">
+	<div id="parent" style="visibility: hidden;">
 		<!--
 			page title container
 		-->
@@ -30,7 +30,7 @@
 				<ul>
 					<li class="demo" id="dp" @click="Demos._selectTab('dp')"><a>Double Pendulum</a></li>
 					<li class="demo" id="chomp" @click="Demos._selectTab('chomp')"><a>Chomp</a></li>
-					<li class="demo" id="third" @click="Demos._selectTab('third')"><a>3rd Demo</a></li>
+					<li class="demo" id="third" style="display: none;" @click="Demos._selectTab('third')"><a>3rd Demo</a></li>
 				</ul>
 			</div>
 
