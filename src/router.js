@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'https://unpkg.com/vue-router@4'
 import Home from './home/Home.vue'
 import About from './about/About.vue'
 import Experience from './experience/Experience.vue'
