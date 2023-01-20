@@ -47,7 +47,7 @@
 					</ul>
 				</li>
 
-				<li @click="_toggleVisible('html')">
+				<li @click="Experience._toggleVisible('html')">
 					<a>HTML</a>
 					<ul id="html" class="langDetails">
 						<li><a>Well-accustomed to language</a></li>
