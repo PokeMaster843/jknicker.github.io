@@ -10,6 +10,26 @@ body #app {
   padding: 0;
   margin: 0;
 }
+body #app #homeBtn {
+  width: 7vmin;
+  height: 7vmin;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 1vmin;
+  left: 1vmin;
+  z-index: 1;
+}
+body #app #homeBtn:hover {
+  background-color: rgba(83, 98, 172, 0.8);
+}
+body #app #homeBtn img {
+  width: 7vmin;
+  height: 6.5vmin;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 body #app #navMenu {
   list-style-type: none;
   margin: 0;
@@ -29,6 +49,11 @@ body #app #navMenu #menuIcon {
   right: 1vmin;
   z-index: 1;
 }
+body #app #navMenu #menuIcon:hover ~ #pages {
+  transition-delay: 100ms;
+  transition-property: visibility;
+  visibility: visible;
+}
 body #app #navMenu #menuIcon img {
   width: 7vmin;
   height: 7vmin;
@@ -39,11 +64,6 @@ body #app #navMenu #menuIcon img:hover {
   animation-name: rotate;
   animation-duration: 300ms;
 }
-body #app #navMenu #menuIcon:hover ~ #pages {
-  transition-delay: 100ms;
-  transition-property: visibility;
-  visibility: visible;
-}
 body #app #navMenu #pages {
   visibility: hidden;
   width: 160pt;
@@ -52,6 +72,9 @@ body #app #navMenu #pages {
   right: 1vmin;
   font-size: 20pt;
   z-index: 1;
+}
+body #app #navMenu #pages:hover {
+  visibility: visible;
 }
 body #app #navMenu #pages li {
   color: white;
@@ -62,6 +85,9 @@ body #app #navMenu #pages li {
   padding: 10px;
   margin: 0;
 }
+body #app #navMenu #pages li:hover {
+  background-color: #212745;
+}
 body #app #navMenu #pages li a:link, body #app #navMenu #pages li a:visited {
   color: white;
   text-decoration: none;
@@ -69,12 +95,6 @@ body #app #navMenu #pages li a:link, body #app #navMenu #pages li a:visited {
 body #app #navMenu #pages li a:link:active, body #app #navMenu #pages li a:visited:active {
   color: white;
   text-decoration: none;
-}
-body #app #navMenu #pages li:hover {
-  background-color: rgba(33, 39, 69, 0.8);
-}
-body #app #navMenu #pages:hover {
-  visibility: visible;
 }
 
 @keyframes rotate {

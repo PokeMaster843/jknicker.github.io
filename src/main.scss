@@ -20,6 +20,29 @@ body {
 		padding: 0;
 		margin: 0;
 
+		#homeBtn {
+			width: 7vmin;
+			height: 7vmin;
+			padding: 0;
+			margin: 0;
+			position: fixed;
+			top: 1vmin;
+			left: 1vmin;
+			z-index: 1;
+
+			&:hover {
+				background-color: rgba(#5362ac, 0.8);
+			}
+
+			img {
+				width: 7vmin;
+				height: 6.5vmin;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+
 		#navMenu {
 			list-style-type: none;
 			margin: 0;
@@ -39,25 +62,25 @@ body {
 				right: 1vmin;
 				z-index: 1;
 
+				&:hover ~ #pages {
+					transition-delay: 100ms;
+					transition-property: visibility;
+					visibility: visible;
+				}
+
 				img {
 					width: 7vmin;
 					height: 7vmin;
 					position: absolute;
 					right: 0;
-				}
 
-				img:hover {
-					animation-name: rotate;
-					animation-duration: 300ms;
+					&:hover {
+						animation-name: rotate;
+						animation-duration: 300ms;
+					}
 				}
 
 			} // #menuIcon
-
-			#menuIcon:hover ~ #pages {
-				transition-delay: 100ms;
-				transition-property: visibility;
-				visibility: visible;
-			}
 
 			#pages {
 				visibility: hidden;
@@ -68,12 +91,20 @@ body {
 				font-size: 20pt;
 				z-index: 1;
 
+				&:hover {
+					visibility: visible;
+				}
+
 				li {
 					@include theme;
 					display: block;
 					overflow: hidden;
 					padding: 10px;
 					margin: 0;
+
+					&:hover {
+						background-color: #212745;
+					}
 
 					a:link, a:visited {
 						color: white;
@@ -87,15 +118,7 @@ body {
 
 				} // li
 
-				li:hover {
-					background-color: rgb(#212745, 0.8);
-				}
-
 			} // #pages
-
-			#pages:hover {
-				visibility: visible;
-			}
 
 		} // #navMenu
 

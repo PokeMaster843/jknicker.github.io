@@ -1,3 +1,11 @@
+#userForm #submitFeedback {
+  color: #C3C3D5;
+  background-color: #212745;
+  border-color: #212745;
+  margin: 1vmin;
+  font-size: 18pt;
+}
+
 #parent {
   width: 100%;
   height: 100%;
@@ -23,6 +31,19 @@
   top: 8%;
   left: 0.5%;
   font-size: 20pt;
+}
+
+#userForm label {
+  font-weight: bold;
+}
+#userForm #feedback {
+  color: #C3C3D5;
+  background-color: rgba(26, 0, 51, 0.8);
+  border-color: rgb(26, 0, 51);
+  border: solid;
+  width: 60vw;
+  height: 30vh;
+  font-size: 18pt;
 }
 
 /*# sourceMappingURL=home.css.map */

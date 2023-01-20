@@ -1,1 +1,23 @@
-@use "../subpage"
+@use "../subpage";
+
+#userForm {
+
+	label {
+		font-weight: bold;
+	}
+
+	#feedback {
+		color: subpage.$textColor;
+		background-color: rgba(26,0,51,0.8);
+		border-color: rgba(26,0,51,1);
+		border: solid;
+		width: 60vw;
+		height: 30vh;
+		font-size: 18pt;
+	}
+
+	#submitFeedback {
+		@extend %formatButton;
+	}
+
+}

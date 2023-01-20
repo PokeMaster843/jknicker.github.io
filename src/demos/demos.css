@@ -1,3 +1,11 @@
+#contentContainer .demoContainer #misc #applyChanges, #contentContainer .demoContainer .demoDiv .newDemo {
+  color: #C3C3D5;
+  background-color: #212745;
+  border-color: #212745;
+  margin: 1vmin;
+  font-size: 18pt;
+}
+
 #parent {
   width: 100%;
   height: 100%;
@@ -60,14 +68,13 @@
   margin-left: 1vmin;
 }
 
-#contentContainer .demoContainer .demoDiv .newDemo, #contentContainer .demoContainer #misc #applyChanges {
-  color: #C3C3D5;
-  background-color: #212745;
-  border-color: #212745;
-  margin: 1vmin;
-  font-size: 18pt;
-}
-
+/*%formatButton {
+	color: subpage.$textColor;
+	background-color: subpage.$baseTheme;
+	border-color: subpage.$baseTheme;
+	margin: 1vmin;
+	font-size: 18pt;
+}*/
 #tabContainer {
   display: block;
   width: 100%;

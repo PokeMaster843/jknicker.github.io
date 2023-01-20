@@ -1,5 +1,9 @@
 <template>
 
+  <div id="homeBtn">
+    <router-link to="/"><img src="./assets/home.svg"></router-link>
+  </div>
+
   <!--
     navigation menu
   -->
