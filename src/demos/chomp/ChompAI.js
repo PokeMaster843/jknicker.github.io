@@ -116,11 +116,16 @@ export default class ChompAI {
 
         let strat = this.findStrategy(sumRows, sumCols);
         if(strat[0] === 0 && strat[1] === 0) {
-            let squaresLeft = 0;
+            
+            /*let squaresLeft = 0;
             for(let k = 0; k < this.rows; k++) {
                 squaresLeft += sumRows[k];
             }
-            return this.avoidBadMove(sumRows, sumCols, squaresLeft);
+            return this.avoidBadMove(sumRows, sumCols, squaresLeft);*/
+            let r = Math.floor(Math.random() * sumCols[0]);
+            let c = Math.floor(Math.random() * sumRows[r]);
+            return [r, c];
+
         }
 
         return strat;
@@ -654,6 +659,7 @@ export default class ChompAI {
 
     },*/
 
+    // TODO: improve runtime
     // used when no winning strategy is found; avoids selecting losing moves
     avoidBadMove(sumRows, sumCols, squaresLeft) {
 
@@ -662,17 +668,13 @@ export default class ChompAI {
         do {
 
             if(Math.random() < 0.5) {
-                r = Math.floor(Math.random() * sumCols[0]) + Math.floor(Math.random() * sumCols[0] / 2);
-                r = r >= sumCols[0] ? sumCols[0] - 1 : r;
-                c = Math.floor(Math.random() * sumRows[r]) + Math.floor(Math.random() * sumRows[r] / 2);
-                c = c >= sumRows[r] ? sumRows[r] - 1 : c;
+                r = Math.floor(Math.random() * sumCols[0]);
+                c = Math.floor(Math.random() * sumRows[r]);
             }
 
             else {
-                c = Math.floor(Math.random() * sumRows[0]) + Math.floor(Math.random() * sumRows[0] / 2);
-                c = c >= sumRows[0] ? sumRows[0] - 1 : c;
-                r = Math.floor(Math.random() * sumCols[c]) + Math.floor(Math.random() * sumCols[c] / 2);
-                r = r >= sumCols[c] ? sumCols[c] - 1 : r;
+                c = Math.floor(Math.random() * sumRows[0]);
+                r = Math.floor(Math.random() * sumCols[c]);
             }
 
         } while(this.attempted[r][c] === true && squaresLeft > 0);
