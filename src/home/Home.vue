@@ -16,8 +16,8 @@
 		-->
 		<div class="pageBody">
 			<p id="welcomeText">
-				Welcome to my demo site! I hope you find it useful in some capacity!<br>
-				Hover over the menu icon in the top right corner to see what pages you can visit!<br>
+				Welcome to my demo site! I hope you find it useful in some capacity!<br><br>
+				Hover over the menu icon in the top right corner to see what pages you can visit!<br><br>
 				Click the home icon in the top left corner at any time to return to this page!<br><br>
 			</p>
 

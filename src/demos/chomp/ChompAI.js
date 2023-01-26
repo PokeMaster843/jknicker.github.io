@@ -663,6 +663,27 @@ export default class ChompAI {
     // used when no winning strategy is found; avoids selecting losing moves
     avoidBadMove(sumRows, sumCols, squaresLeft) {
 
+        /*
+        list of potential square rows (pre-shuffle):
+        0,0,0,...,0, (sumRows[0] times)
+        1,1,1,...,1, (sumRows[1] times)
+        ...
+        n,n,n,...,n  (sumRows[n]=sumRows[sumCols[0] - 1] times)
+
+        list of potential columns, identified by row (pre-shuffle):
+        0:0,1,2,...,a, (sumRows[0] entries)
+        ...
+        n:0,1,2,...,z  (sumRows[n]=sumRows[sumCols[0] - 1] entries)
+
+        process:
+         - shuffle potential square rows
+         - shuffle the potential column lists for each row
+         - pull first element from shuffled rows list, and then front element from shuffled column list for that row
+         - pull next element from shuffled rows list, and then front element from shuffled column list for that row (maybe same row as above, maybe not)
+         - repeat until move selected is not bad, or you have run out of moves to select
+        */
+        
+
         // make random selection, then check for problems
         let r, c;
         do {

@@ -24,7 +24,7 @@
     </div>
   </ul>
   <!--
-    necessary to display component linked to by router-link tags
+    displays component linked to by router-link tags
   -->
   <router-view></router-view>
 </template>
